@@ -1,22 +1,21 @@
-console.log("Hello!!!!!!!!");
+// this is a comment
 
-var x = 0, y = 10;
-//
-// if(x == 0){
-//   console.log("X is zero");
-// }
-//
-// for(var i = 0; i < 10; i++){
-//   console.log(i);
-// }
+var x = 0, y = 10, sum = 0;
+
+if(x == 0){
+  console.log("x == 0");
+}
+
+for(var i = 0; i < y; i++){
+  console.log(i);
+}
 
 function add(){
-  // x and y will be strings
-  x = document.getElementById("num1").value;
-  y = document.getElementById("num2").value;
+  x = document.getElementById('num1').value;
+  y = document.getElementById('num2').value;
+  sum = x + y;
+  console.log(sum);
 
-  var sum = parseInt(x) + parseInt(y);
-
-  document.getElementById("label").innerHTML = "Your sum is: " + sum;
-
+  sum = parseInt(x) + parseInt(y);
+  document.getElementById('label').innerHTML = "Our answer is: " + sum;
 }
