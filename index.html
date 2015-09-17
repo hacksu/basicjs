@@ -4,13 +4,29 @@
     <title>JS</title>
   </head>
   <body>
-      <input type="text" value="1" id="num1">
-      <input type="text" value="2" id="num2">
-      <button type="button" name="button" onclick="add()">submit</button>
-    <p id="label">
-      Our answer is:
-    </p>
+    <!-- Here we make two text input boxes, and we're
+    giving them values just so that we don't have to
+    type numbers in everytime we refresh the page.
+    The id's are how we'll reach the value in the box
+    in our javascript file. -->
+    <input type="text" value="1" id="num1">
+    <input type="text" value="2" id="num2">
+    
+    <!-- The onclick="add()" will run our function in
+    the javascript file.-->
+    <button type="button" name="button" onclick="add()">submit</button>
 
+    <!-- This is where we'll update our answer. Make
+    sure your id is correct.-->
+    <p id="label"></p>
+
+    <!-- This is where we tell the brower, hey, make sure
+    to check out our javascript file so that you know what
+    actions to take. We put this at the bottom of the HTML and
+    not the top in the head like we would if it were CSS because
+    it's better for the loading time of our page. If you want,
+    you can put it on the top of the top, it will work, but it's
+    not recommended.  -->
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
